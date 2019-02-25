@@ -4,15 +4,11 @@ import java.util.Arrays;
 
 public class Test268 {
 	public int missingNumber(int[] nums) {
-		if (nums.length == 1 && nums[0] == 0) {
-			return 1;
-
-		} else if (nums.length == 1 && nums[0] == 1) {
+		if (nums.length == 1 && nums[0] == 1) {
 			return 0;
 
 		}
 		Arrays.sort(nums);
-
 		int first = nums[0];
 		if (first != 0) {
 			return 0;
